@@ -1372,11 +1372,16 @@
     .btn-header img {
         max-width: 20px;
     }
+    .price-main {
+        font-size: 18px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .slider-catalog .slick-slide {
+        padding: 0 1px;
+    }
 }
 
 /* Extra Small Devices, Phones */
