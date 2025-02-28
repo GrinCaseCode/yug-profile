@@ -1060,17 +1060,18 @@
         font-size: 62px;
     }
     .catalog {
-        padding: 50px 0;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
     .title-section {
         font-size: 26px;
         margin-bottom: 22px;
     }
     .slick-prev {
-        left: -10px;
+        left: 0px;
     }
     .slick-next {
-        right: -10px;
+        right: 0px;
     }
     .steps .title-section {
         max-width: 257px;
@@ -1357,6 +1358,12 @@
     }
     .steps .row_page {
         margin: 0 -10px;
+    }
+    .categories {
+        padding-bottom: 45px;
+    }
+    .billbord::before {
+        background: linear-gradient(0deg, rgba(56, 63, 81, 0.8), rgba(56, 63, 81, 0.8));
     }
 }
 
