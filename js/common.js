@@ -18,6 +18,45 @@ if ( $(this).scrollTop() > 0 && $btnCalc.hasClass("default") ){
     $btnCalc.removeClass("fixed").addClass("default");
   }
 
+  $(".btn-main_filter").click(function(e) {
+	e.preventDefault();
+	$(this).toggleClass("active");
+	$(".sidebar-catalog").slideToggle(200);
+});
+
+  $(".item-sidebar__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+    $(this).parent().siblings(".item-sidebar").removeClass("active");
+    $(this).parent().siblings(".item-sidebar").find(".item-sidebar__content").slideUp(200);
+  });
+
+//locations
+$(document).mouseup(function (e) {
+	var container2 = $(".location-main");
+	if (container2.has(e.target).length === 0){
+		$(".location-drodown").slideUp(200);
+	}
+});
+
+$(".location-main__value").click(function() {
+	if ($(this).parents(".location-main").find(".location-drodown").is(":hidden")) {
+		$(this).parents(".location-main").find(".location-drodown").slideDown(200);
+	} else {
+		$(this).parents(".location-main").find(".location-drodown").slideUp(200);
+	}
+});
+
+$('.input-calculator input').blur(function() {
+	$(".scheme-calculator *").removeClass("active"); 
+	$(".input-calculator").removeClass("active"); 
+  })
+  .focus(function() {
+	var dataCalc = $(this).parent().data('calculator');
+	$(this).parent().addClass("active");
+	$("." + dataCalc).addClass("active"); 
+  });
+
 
 
 	//кнопка sandwich
@@ -42,7 +81,7 @@ if ( $(this).scrollTop() > 0 && $btnCalc.hasClass("default") ){
 		$(".menu-overlay").fadeOut(200);
 	});
 
-	$(".menu__haschild > a").click(function(e) {
+	$(".menu-mobile .menu__haschild > a").click(function(e) {
 		e.preventDefault();
 		$(this).parent().siblings().removeClass("active");
 		$(this).parent().siblings().find("ul").slideUp(200);
@@ -106,6 +145,31 @@ if ( $(this).scrollTop() > 0 && $btnCalc.hasClass("default") ){
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: true,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
 	$('.item-catalog__slider').on('touchstart touchmove', function (e) {
 		e.stopPropagation();
 		e.preventDefault();
@@ -137,7 +201,7 @@ if ( $(this).scrollTop() > 0 && $btnCalc.hasClass("default") ){
 
 
 	 // стайлер для select
-	 $('.item-form select').styler();
+	 $('.item-select select, .select-filter select').styler();
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
