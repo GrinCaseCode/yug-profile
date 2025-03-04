@@ -1541,7 +1541,6 @@ form {
 	margin-bottom: 20px;
 	gap: 6px;
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
 }
 .select-filter select {
