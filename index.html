@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.3" />
-	<link rel="stylesheet" href="css/media.css?ver=1.3" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body>
 
@@ -38,9 +38,27 @@
 						<span class='sw-bottom'></span>
 						<span class='sw-footer'></span>
 					</span>
-					<a href="#" class="logo">
-						<img src="img/logo.svg" alt="alt">
-					</a>
+					<div class="header__left">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="location-main">
+							<div class="location-main__value">Ростов-на-Дону</div>
+							<div class="location-drodown">
+								<ul>
+									<li><a href="#">Москва</a></li>
+									<li><a href="#">Санкт Петербург</a></li>
+									<li><a href="#">Ростов-на-Дону</a></li>
+									<li><a href="#">Краснодар</a></li>
+									<li><a href="#">Новороссийск</a></li>
+									<li><a href="#">Ставрополь</a></li>
+									<li><a href="#">Волгоград</a></li>
+									<li><a href="#">Симферополь</a></li>
+									<li><a href="#">Мелитополь</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 					<ul class="menu">
 						<li class="menu__catalog"><a href="#">Каталог продукции</a></li>
 						<li><a href="#">О компании</a></li>
@@ -58,6 +76,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<div class="header__right">
+						<a href="mailto:yugprofil@mail.ru" class="link-simple hidden-mob">yugprofil@mail.ru</a>
 						<div class="header__buttons">
 							<div class="header-search">
 								<div class="header-search__form">
@@ -68,16 +87,14 @@
 								</div>
 								<div class="open-search"><img src="img/search.svg" alt="alt"></div>
 							</div>
-							<a href="#" class="btn-header">
+							<a href="#modal-callback" class="btn-header fancybox">
+								<img src="img/tel.svg" alt="alt">
+							</a>
+							<a href="#" class="btn-header btn-header_basket">
 								<img src="img/cart.svg" alt="alt">
 							</a>
 						</div>
-						<div class="header__contacts">
-							<a href="mailto:yugprofil@mail.ru" class="link-simple">yugprofil@mail.ru</a>
-							<a href="#modal-callback" class="btn-main fancybox"><img src="img/phone.svg" alt="alt">Обратный звонок</a>
-						</div>
 					</div>
-					<a href="#modal-callback" class="btn-call fancybox"><img src="img/phone.svg" alt="alt"></a>
 				</div>
 			</div>
 			<div class="menu-mobile">
@@ -97,6 +114,22 @@
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
+				<div class="location-main">
+					<div class="location-main__value">Ростов-на-Дону</div>
+					<div class="location-drodown">
+						<ul>
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Санкт Петербург</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Новороссийск</a></li>
+							<li><a href="#">Ставрополь</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Симферополь</a></li>
+							<li><a href="#">Мелитополь</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="header__contacts">
 					<a href="mailto:yugprofil@mail.ru" class="link-simple">yugprofil@mail.ru</a>
 					<a href="#modal-callback" class="btn-main fancybox"><img src="img/phone.svg" alt="alt">Обратный звонок</a>
@@ -615,7 +648,7 @@
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.3"></script>
+	<script src="js/common.js?ver=1.4"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
