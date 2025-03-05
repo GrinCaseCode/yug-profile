@@ -94,6 +94,22 @@ $('.input-calculator input').blur(function() {
 		}
 		});
 
+		$(".menu__catalog > a").click(function(e) {
+			e.preventDefault();
+			if ($(this).siblings(".menu__dropdown").is(":hidden")) {
+				$(this).siblings(".menu__dropdown").slideDown(200);
+			} else {
+				$(this).siblings(".menu__dropdown").slideUp(200);
+			}
+			});
+
+			$(document).mouseup(function (e) {
+				var container3 = $(".header__wrapper .menu__catalog");
+				if (container3.has(e.target).length === 0){
+				$(".header__wrapper .menu__dropdown").slideUp(200);
+				}
+			});
+
 		/*input file*/
 		$("input[type='file']").change(function(){
 			var filename_text = $(this).parent().siblings(".name-upload");
@@ -198,6 +214,15 @@ $('.input-calculator input').blur(function() {
 		$(".header-search").removeClass("active");
 		}
 	});
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	  });
 
 
 	 // стайлер для select
