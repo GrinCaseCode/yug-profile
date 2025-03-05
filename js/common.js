@@ -83,6 +83,8 @@ $('.input-calculator input').blur(function() {
 
 	$(".menu-mobile .menu__haschild > a").click(function(e) {
 		e.preventDefault();
+		$(this).parent().siblings().removeClass("active");
+		$(this).parent().siblings().find(".menu__dropdown").slideUp(200);
 		if ($(this).siblings("ul").is(":hidden")) {
 			$(this).siblings("ul").slideDown(200);
 			$(this).parent().addClass("active");
@@ -91,6 +93,11 @@ $('.input-calculator input').blur(function() {
 			$(this).parent().removeClass("active");
 		}
 		});
+
+		$(".menu-mobile .menu__catalog > a").click(function() {
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().siblings().find("ul").slideUp(200);
+			});
 
 		$(".menu__catalog > a").click(function(e) {
 			e.preventDefault();
