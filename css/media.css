@@ -2677,7 +2677,7 @@
         font-size: 16px;
     }
     .billbord-about::before {
-        background: linear-gradient(0deg, rgba(56, 63, 81, 0.9), rgba(56, 63, 81, 0.9));
+        background: linear-gradient(0deg, rgba(56, 63, 81, 0.8), rgba(56, 63, 81, 0.8));
     }
     .wrap-guarantee {
         padding-bottom: 40px;
