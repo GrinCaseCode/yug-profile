@@ -2474,7 +2474,7 @@
         font-size: 44px;
     }
     .page-mockup_error {
-        background-position: 63% 50%;
+        background-image: url(../img/bg_error_mob.jpg);
     }
     .page-mockup_error .descr-mockup {
         font-size: 20px;
@@ -2675,6 +2675,21 @@
     }
     .item-catalog__title {
         font-size: 16px;
+    }
+    .billbord-about::before {
+        background: linear-gradient(0deg, rgba(56, 63, 81, 0.9), rgba(56, 63, 81, 0.9));
+    }
+    .wrap-guarantee {
+        padding-bottom: 40px;
+    }
+    .slider-nav .slick-prev {
+        left: -8px;
+    }
+    .slider-nav .slick-next {
+        right: -8px;
+    }
+    .line-calculator__title br {
+        display: none;
     }
 }
 
