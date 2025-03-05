@@ -2611,8 +2611,8 @@
         margin-bottom: -15px;
     }
     .item-box {
-        font-size: 13px;
-        min-height: 170px;
+        font-size: 14px;
+        min-height: 180px;
     }
     .item-box::before, .item-box::after {
         height: 17px;
@@ -2635,7 +2635,7 @@
         margin: 0;
     }
     .unit-box {
-        font-size: 13px;
+        font-size: 14px;
         padding: 18px 20px;
     }
     .wrap-payment__items .row.row_main > div {
@@ -2690,6 +2690,9 @@
     }
     .line-calculator__title br {
         display: none;
+    }
+    .recommendations .title-section {
+        max-width: 300px;
     }
 }
 
