@@ -175,6 +175,65 @@
         padding-bottom: 25px;
         font-size: 17px;
     }
+
+    .page-about .title-middle {
+        margin-top: 28px;
+        margin-bottom: 25px;
+        margin-right: 0px;
+    }
+    .vacancies-about .title-middle {
+        max-width: 800px;
+    }
+    .text-main {
+        font-size: 16px;
+    }
+    .banner-about {
+        height: 730px;
+        padding: 60px 50px;
+    }
+    .banner-about__content {
+        max-width: 585px;
+    }
+    .item-about {
+        height: 525px;
+        padding: 30px;
+    }
+    .unit-advantage {
+        font-size: 16px;
+        padding: 26px 18px;
+    }
+    .unit-advantage__title {
+        font-size: 18px;
+        padding-bottom: 19px;
+        margin-bottom: 21px;
+        margin-right: -7px;
+    }
+    .advantages-main {
+        padding-top: 70px;
+        padding-bottom: 55px;
+    }
+    .item-question__head {
+        padding: 21px;
+    }
+    .wrap-delivery__content {
+        padding: 31px 45px;
+        font-size: 16px;
+    }
+    .wrap-delivery__content a {
+        font-size: 23px;
+    }
+    .wrap-payment .item-box {
+        min-height: 290px;
+    }
+    .list-main li {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .guarantee-info {
+        font-size: 16px;
+        padding: 41px;
+        margin-left: 50px;
+    }
 }
 @media only screen and (max-width : 1700px) {
     body {
@@ -582,23 +641,14 @@
         padding: 20px 26px;
         width: 420px;
     }
-    .billbord-about .breadcrumbs,
-    .billbord-guarantee .breadcrumbs {
+    .billbord-about .breadcrumbs {
         padding-bottom: 125px;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 775px;
-    }
-    .title-big {
-        font-size: 93px;
     }
     .wrap-guarantee .title-middle {
         margin-bottom: 40px;
-    }
-    .page-guarantee {
-        padding-top: 52px;
-        padding-bottom: 100px;
     }
     .item-box {
         min-height: 237px;
@@ -622,10 +672,93 @@
         font-size: 27px;
     }
     .page-about .title-middle {
+        margin-top: 20px;
         margin-bottom: 36px;
     }
     .text-about {
         font-size: 13px;
+    }
+    .title-main {
+        font-size: 22px;
+    }
+    .text-main {
+        font-size: 15px;
+    }
+    .banner-about__content {
+        max-width: 525px;
+    }
+    .banner-about {
+        height: 655px;
+    }
+    .item-about {
+        height: 480px;
+        padding: 25px;
+    }
+    .section-advantages .title-middle {
+        margin-bottom: 42px;
+    }
+    .descr-big {
+        font-size: 24px;
+    }
+    .billbord-retails .title-big {
+        font-size: 75px;
+        margin-bottom: 26px;
+    }
+    .billbord-retails .title-big {
+        font-size: 70px;
+        margin-bottom: 23px;
+    }
+    .billbord-page .breadcrumbs {
+        padding-bottom: 60px;
+    }
+    .billbord-page {
+        min-height: 590px;
+    }
+    .wrap-payment .item-box {
+        min-height: 271px;
+    }
+    .wrap-delivery__content a {
+        font-size: 21px;
+    }
+    .wrap-delivery__content {
+        padding: 25px 34px;
+        font-size: 15px;
+    }
+    .payment-delivery {
+        padding-top: 65px;
+        padding-bottom: 95px;
+    }
+    .wrap-payment {
+        margin-bottom: 65px;
+    }
+    .payment-delivery .title-middle {
+        margin-bottom: 32px;
+    }
+    .billbord-page__content {
+        max-width: 790px;
+    }
+    .title-big {
+        font-size: 75px;   
+    }
+    .unit-advantage__title::before {
+        width: 20px;
+        height: 17px;
+    }
+    .unit-advantage__title {
+        font-size: 17px;
+        padding-bottom: 15px;
+        margin-bottom: 17px;
+        margin-right: -7px;
+        gap: 5px;
+    }
+    .item-question__head {
+        font-size: 18px;
+        padding: 18px;
+    }
+    .item-question__content {
+        padding: 20px 26px;
+        padding-right: 115px;
+        padding-top: 0;
     }
 }
 @media only screen and (max-width : 1600px) {
@@ -905,15 +1038,10 @@
         padding: 18px 22px;
         width: 380px;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 730px;
     }
-    .title-big {
-        font-size: 86px;
-    }
-    .billbord-about .breadcrumbs,
-    .billbord-guarantee .breadcrumbs {
+    .billbord-about .breadcrumbs {
         padding-bottom: 105px;
     }
     .wrap-guarantee .title-middle {
@@ -945,6 +1073,69 @@
     }
     .billbord-about .title-section {
         max-width: 725px;
+    }
+
+    .vacancies-about .title-middle {
+        max-width: 755px;
+    }
+    .title-main {
+        font-size: 20px;
+    }
+    .banner-about__content {
+        max-width: 490px;
+    }
+    .text-main {
+        font-size: 14px;
+    }
+    .item-about {
+        height: 445px;
+        padding: 22px;
+    }
+    .alert-dot {
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+    }
+    .billbord-about .title-big {
+        font-size: 92px;
+    }
+    .billbord-about .title-section {
+        max-width: 668px;
+    }
+    .descr-big {
+        font-size: 22px;
+    }
+    .title-big {
+        font-size: 69px;
+    }
+    .billbord-page__content {
+        max-width: 722px;
+    }
+    .list-main li {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+    .guarantee-info p {
+        margin-bottom: 15px;
+    }
+    .guarantee-info {
+        font-size: 15px;
+        padding: 36px;
+    }
+    .page-guarantee {
+        padding-top: 62px;
+        padding-bottom: 88px;
+    }
+    .unit-advantage__title {
+        font-size: 16px;
+        padding-bottom: 13px;
+        margin-bottom: 16px;
+        margin-right: -2px;
+        gap: 5px;
+    }
+    .unit-advantage {
+        font-size: 14px;
+        padding: 23px 15px;
     }
 }
 @media only screen and (max-width : 1500px) {
@@ -1241,8 +1432,7 @@
     .tab-container {
         font-size: 12px;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 685px;
     }
     .payment-main__title {
@@ -1256,6 +1446,38 @@
     }
     .logo-about {
         margin-right: 12px;
+    }
+
+    .section-advantages .title-middle {
+        max-width: 610px;
+        margin-bottom: 30px;
+    }
+    .wrap-delivery__content a {
+        font-size: 19px;
+    }
+    .wrap-delivery__content p {
+        margin-bottom: 13px;
+    }
+    .wrap-delivery__content {
+        padding: 22px 28px;
+        font-size: 14px;
+    }
+    .wrap-payment .item-box {
+        min-height: 248px;
+    }
+    .list-main li {
+        font-size: 14px;
+    }
+    .guarantee-info {
+        font-size: 14px;
+        padding: 30px;
+        margin-left: 40px;
+    }
+    .form-page {
+        padding: 40px 52px;
+    }
+    .unit-advantage__title {
+        font-size: 15px;
     }
 }
 @media only screen and (max-width : 1400px) {
@@ -1494,20 +1716,27 @@
     .row.row_main {
         margin-bottom: -10px;
     }
-    .page-guarantee {
-        padding-top: 45px;
-        padding-bottom: 75px;
-    }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 640px;
     }
-    .billbord-about .breadcrumbs,
-    .billbord-guarantee .breadcrumbs {
+    .billbord-about .breadcrumbs {
         padding-bottom: 90px;
     }
     .title-big {
         font-size: 78px;
+    }
+    .wrap-payment .item-box {
+        min-height: 233px;
+    }
+    .item-box .title-main {
+        margin-bottom: 13px;
+    }
+    .wrap-delivery__content {
+        padding: 20px;
+        font-size: 13px;
+    }
+    .billbord-about .title-big {
+        font-size: 83px;
     }
 }
 @media only screen and (max-width : 1300px) {
@@ -1707,8 +1936,7 @@
     .menu__dropdown ul li a {
         font-size: 13px;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 580px;
     }
     .item-box::before, .item-box::after {
@@ -1729,6 +1957,68 @@
     }
     .title-middle {
         font-size: 20px;
+    }
+    .title-main {
+        font-size: 20px;
+    }
+    .text-main {
+        font-size: 13px;
+    }
+    .banner-about__content {
+        max-width: 408px;
+    }
+    .banner-about {
+        padding: 45px;
+        height: 480px;
+    }
+    .section-advantages .title-middle {
+        max-width: 525px;
+    }
+    .section-banner {
+        padding-bottom: 55px;
+    }
+    .item-about {
+        height: 355px;
+        padding: 18px;
+    }
+    .item-box .title-main {
+        margin-bottom: 8px;
+    }
+    .wrap-payment .item-box {
+        min-height: 215px;
+    }
+    .wrap-delivery__content a {
+        font-size: 17px;
+    }
+    .wrap-delivery__content {
+        padding: 16px;
+        font-size: 12px;
+    }
+    .payment-delivery {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .billbord-page {
+        min-height: 525px;
+    }
+    .descr-big {
+        font-size: 20px;
+    }
+    .title-big {
+        font-size: 72px;
+    }
+    .billbord-page__content {
+        max-width: 664px;
+    }
+    .form-page {
+        padding: 33px 36px;
+    }
+    .item-question__head {
+        font-size: 16px;
+        padding: 18px;
+    }
+    .questions {
+        padding-bottom: 80px;
     }
 }
 /* Large Devices, Wide Screens */
@@ -1872,12 +2162,10 @@
     .menu__dropdown {
         width: 340px;
     }
-    .billbord-about .breadcrumbs,
-    .billbord-guarantee .breadcrumbs {
+    .billbord-about .breadcrumbs {
         padding-bottom: 70px;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 480px;
     }
     .title-big {
@@ -1902,6 +2190,31 @@
     }
     .billbord-about + .advantages {
         margin-top: -83px;
+    }
+    .billbord-page {
+        min-height: 500px;
+    }
+    .wrap-payment .item-box {
+        padding: 25px 15px;
+        min-height: 190px;
+    }
+    .title-main {
+        font-size: 18px;
+    }
+    .wrap-payment {
+        margin-bottom: 45px;
+    }
+    .payment-delivery .title-middle {
+        margin-bottom: 25px;
+    }
+    .billbord-about .title-section {
+        max-width: 604px;
+    }
+    .billbord-about .title-big {
+        font-size: 74px;
+    }
+    .form-page {
+        padding: 33px 25px;
     }
 }
 
@@ -2591,14 +2904,13 @@
         font-size: 14px;
     }
     .title-big {
-        font-size: 43px;
+        font-size: 34px;
     }
     .billbord-about::after,
-    .billbord-guarantee::after {
+    .billbord-page::after {
         background-position: center bottom;
     }
-    .billbord-about,
-    .billbord-guarantee {
+    .billbord-about {
         min-height: 425px;
     }
     .wrap-guarantee .title-middle {
@@ -2643,10 +2955,6 @@
     }
     .wrap-payment__items .row.row_main {
         margin-bottom: -20px;
-    }
-    .page-guarantee {
-        padding-top: 35px;
-        padding-bottom: 60px;
     }
     .billbord-about .title-section {
         max-width: 585px;
@@ -2693,6 +3001,123 @@
     }
     .recommendations .title-section {
         max-width: 300px;
+    }
+    .page-about .title-middle {
+        margin-top: 0;
+    }
+    .vacancies-about,
+    .page-about {
+        padding: 50px 0;
+    }
+    .head-top .title-middle {
+        margin-bottom: 20px;
+    }
+    .head-top {
+        margin-bottom: 25px;
+    }
+    .title-main {
+        font-size: 17px;
+    }
+    .banner-about {
+        padding: 25px 15px;
+        height: auto;
+    }
+    .banner-about .title-middle {
+        margin-bottom: 17px;
+    }
+    .banner-about__image img {
+        object-position: left;
+    }
+    .item-about {
+        height: 425px;
+        padding: 20px;
+    }
+    .section-advantages {
+        padding-bottom: 50px;
+    }
+    .billbord-retails .title-big {
+        font-size: 38px;
+        margin-bottom: 22px;
+    }
+    .descr-big {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .billbord-page {
+        min-height: 395px;
+    }
+    .payment-delivery {
+        padding-top: 38px;
+        padding-bottom: 60px;
+    }
+    .wrap-delivery__content {
+        padding: 20px;
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 20px;
+        min-height: initial;
+    }
+    .wrap-delivery__image {
+        margin-left: 0;
+    }
+    .wrap-payment__content .row > div {
+        margin-bottom: 20px;
+    }
+    .wrap-payment__content .row {
+        margin-bottom: -20px;
+    }
+    .wrap-payment__content {
+        margin: 0;
+        min-height: initial;
+    }
+    .wrap-payment__image {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .billbord-about .title-big {
+        font-size: 42px;
+    }
+    .page-guarantee {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .page-guarantee .title-main {
+        margin-bottom: 15px;
+    }
+    .list-main li {
+        padding-left: 17px;
+    }
+    .guarantee-info {
+        padding: 20px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .billbord-page_guarantee {
+        background-position: center left;
+    }
+    .page-guarantee .title-main {
+        font-size: 18px;
+    }
+    .item-question__head i {
+        width: 38px;
+        height: 38px;
+    }
+    .item-question__head {
+        font-size: 14px;
+        padding: 15px;
+    }
+    .item-question__content {
+        padding: 15px;
+        padding-top: 0;
+    }
+    .questions .form-page {
+        margin-top: 20px;
+    }
+    .questions {
+        padding-bottom: 60px;
+    }
+    .advantages-main {
+        padding: 50px 0;
     }
 }
 
@@ -2889,8 +3314,11 @@
         background: #dae5ea;
     }
     .billbord-about .breadcrumbs a:hover,
-    .billbord-guarantee .breadcrumbs a:hover {
+    .billbord-page .breadcrumbs a:hover {
         border-color: #fff;
+    }
+    .item-step a:hover {
+        border-color: transparent;
     }
 }
 
@@ -2988,7 +3416,10 @@
         background: #dae5ea;
     }
     .billbord-about .breadcrumbs a:active,
-    .billbord-guarantee .breadcrumbs a:active {
+    .billbord-page .breadcrumbs a:active {
         border-color: #fff;
+    }
+    .item-step a:active {
+        border-color: transparent;
     }
 }
