@@ -760,6 +760,9 @@
         padding-right: 115px;
         padding-top: 0;
     }
+    .questions .form-page {
+        max-width: 430px;
+    }
 }
 @media only screen and (max-width : 1600px) {
     .menu {
