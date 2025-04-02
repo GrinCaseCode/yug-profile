@@ -3819,6 +3819,10 @@
         background: #01497c;
         color: #fff;
     }
+    .remove-basket:hover {
+        background: #01497c;
+        color: #fff;
+    }
 }
 
 @media (hover: none) {
@@ -3922,6 +3926,10 @@
         border-color: transparent;
     }
     .tabs-page a:active {
+        background: #01497c;
+        color: #fff;
+    }
+    .remove-basket:active {
         background: #01497c;
         color: #fff;
     }
