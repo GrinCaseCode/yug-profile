@@ -128,6 +128,18 @@ $('.input-calculator input').blur(function() {
 			filename_text.html(filename);
 		});
 
+		// плавный скролл
+$('.nav-article a').on('click', function(e) {
+	e.preventDefault();
+	
+	var targetId = $(this).attr('href');
+	var headerHeight = $('.header').outerHeight();
+	
+	$('html, body').animate({
+		scrollTop: $(targetId).offset().top - headerHeight
+	}, 800); 
+  });
+
 	//слайдер
 
 	$('.slider-catalog').slick({
@@ -197,6 +209,8 @@ $('.input-calculator input').blur(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 	});
 
+
+
 	$('.item-catalog__slider').on('touchstart touchmove', function (e) {
 		e.stopPropagation();
 		e.preventDefault();
@@ -234,6 +248,48 @@ $('.input-calculator input').blur(function() {
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(200);
 	  });
+
+
+	  $('.tabs-page li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-page").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	  });
+	  
+	  jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
 
 
 	 // стайлер для select
