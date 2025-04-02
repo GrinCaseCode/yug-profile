@@ -3033,8 +3033,9 @@ input[type=number]
 }
 .tabs-page {
 	border-radius: 40px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
+	vertical-align: middle;
 	background: #fff;
 }
 .tabs-page a {

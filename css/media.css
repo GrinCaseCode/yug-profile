@@ -3605,6 +3605,9 @@
         width: 120px;
         height: 90px;
     }
+    .item-basket {
+        padding: 15px;
+    }
 }
 
 /* Small Devices, Tablets */
