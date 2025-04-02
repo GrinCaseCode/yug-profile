@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<div class="wrapper wrapper_page">
+	<div class="wrapper wrapper_page"> 
 
 		<div class="btn-calculator-wrap default">
 			<div class="container">
@@ -166,11 +166,166 @@
 			<div class="menu-overlay"></div>
 		</header>
 
-		<section class="page-mockup page-mockup_error">
+		<section class="page-basket">
 			<div class="container">
-				<h1 class="title-mockup">ошибка 404 <br>страница не найдена</h1>
-				<div class="descr-mockup">Страница, на которую Вы пытаетесь попасть, не существует или была удалена</div>
-				<a href="/" class="btn-main">Вернуться на главную</a>
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>Корзина</li>
+				</ul>
+				<h1 class="title-section">ваша корзина</h1>
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="item-basket">
+							<a href="#" class="item-basket__image">
+								<img src="img/basket.jpg" alt="alt">
+							</a>
+							<div class="item-basket__content">
+								<a href="#" class="item-basket__title">Труба котельная 60 х6 12Х1МФ ГОСТ: ТУ 14-3Р-55-2001 КВД</a>
+							</div>
+							<div class="item-basket__prices">
+								<div class="item-basket__name">Цена от:</div>
+								<div class="price-main">250 065 ₽/т</div>
+							</div>
+							<div class="quantity">
+								<div class="quantity-button quantity-down">–</div>
+								<input type="number" min="1" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+							<div class="item-basket__prices">
+								<div class="item-basket__name">Итого:</div>
+								<div class="price-main">250 065 ₽/т</div>
+							</div>
+							<div class="item-basket__remove">
+								<div class="remove-basket"><i class="far fa-trash"></i></div>
+							</div>
+						</div>
+						<div class="item-basket">
+							<a href="#" class="item-basket__image">
+								<img src="img/basket.jpg" alt="alt">
+							</a>
+							<div class="item-basket__content">
+								<a href="#" class="item-basket__title">Труба котельная 60 х6 12Х1МФ ГОСТ: ТУ 14-3Р-55-2001 КВД</a>
+							</div>
+							<div class="item-basket__prices">
+								<div class="item-basket__name">Цена от:</div>
+								<div class="price-main">250 065 ₽/т</div>
+							</div>
+							<div class="quantity">
+								<div class="quantity-button quantity-down">–</div>
+								<input type="number" min="1" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+							<div class="item-basket__prices">
+								<div class="item-basket__name">Итого:</div>
+								<div class="price-main">250 065 ₽/т</div>
+							</div>
+							<div class="item-basket__remove">
+								<div class="remove-basket"><i class="far fa-trash"></i></div>
+							</div>
+						</div>
+						<div class="form-order">
+							<div class="form-order__head">
+								<div class="title-main">Ваши данные</div>
+								<ul class="tabs-page">
+									<li class="active"><a href="#tab_order1">Физическое лицо</a></li>
+									<li><a href="#tab_order2">Юридическое лицо</a></li>
+								</ul>
+							</div>
+							<div class="tab-container-page">
+								<div class="tab-pane-page" id="tab_order1">
+									<form>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-form">
+													<input type="text" placeholder="Ваше имя" required>
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="Страна и город" required>
+												</div>
+												<div class="item-form">
+													<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+												</div>
+												<div class="item-form">
+													<input type="email" placeholder="Электронная почта" inputmode="email" required>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="file-upload file-upload_main">
+													<label><input type="file" name="file"><i class="far fa-paperclip"></i> Добавить спецификацию</label>
+													<div class="name-upload"></div>
+												</div>
+												<div class="descr-input">Вы можете приложить файл со спецификацией. Рекомендуем формат PDF, DOC, XLS</div>
+												<div class="form-order__bottom">
+													<input type="submit" value="Отправить" class="btn-main">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" required="required" checked="checked" />
+															<span>Согласие на обработку персональных данных</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane-page" id="tab_order2">
+									<form>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-form">
+													<input type="text" placeholder="Ваше имя" required>
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="Страна и город" required>
+												</div>
+												<div class="item-form">
+													<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+												</div>
+												<div class="item-form">
+													<input type="email" placeholder="Электронная почта" inputmode="email" required>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="file-upload file-upload_main">
+													<label><input type="file" name="file"><i class="far fa-paperclip"></i> Добавить спецификацию</label>
+													<div class="name-upload"></div>
+												</div>
+												<div class="descr-input">Вы можете приложить файл со спецификацией. Рекомендуем формат PDF, DOC, XLS</div>
+												<div class="form-order__bottom">
+													<input type="submit" value="Отправить" class="btn-main">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" required="required" checked="checked" />
+															<span>Согласие на обработку персональных данных</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="total-basket">
+							<div class="title-middle">Корзина</div>
+							<div class="feature">
+								<div class="feature__title">Всего товаров:</div>
+								<div class="feature__value">2</div>
+							</div>
+							<div class="feature">
+								<div class="feature__title">Количество позиций:</div>
+								<div class="feature__value">2</div>
+							</div>
+							<div class="feature">
+								<div class="feature__title">Сумма заказа:</div>
+								<div class="feature__value">500 130 ₽/т</div>
+							</div>
+							<a href="#" class="btn-main">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 

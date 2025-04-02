@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.13" />
+	<link rel="stylesheet" href="css/media.css?ver=1.13" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page"> 
+
+		<div class="btn-calculator-wrap default">
+			<div class="container">
+				<a href="#" class="btn-calculator"><img src="img/ic_calculator.svg" alt="alt">Расчет кровли онлайн</a>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<span class='sandwich'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span>
+						<span class='sw-footer'></span>
+					</span>
+					<div class="header__left">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="location-main">
+							<div class="location-main__value">Ростов-на-Дону</div>
+							<div class="location-drodown">
+								<ul>
+									<li><a href="#">Москва</a></li>
+									<li><a href="#">Санкт Петербург</a></li>
+									<li><a href="#">Ростов-на-Дону</a></li>
+									<li><a href="#">Краснодар</a></li>
+									<li><a href="#">Новороссийск</a></li>
+									<li><a href="#">Ставрополь</a></li>
+									<li><a href="#">Волгоград</a></li>
+									<li><a href="#">Симферополь</a></li>
+									<li><a href="#">Мелитополь</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="menu">
+						<li class="menu__catalog">
+							<a href="#">Каталог продукции</a>
+							<div class="menu__dropdown">
+								<ul>
+									<li><a href="#">Трубы профильные</a></li>
+									<li><a href="#">Профнастил</a></li>
+									<li><a href="#">Сэндвич-панели</a></li>
+									<li><a href="#">Профили для ГКЛ</a></li>
+									<li><a href="#">Штакетники</a></li>
+									<li><a href="#">Профили для армирования окон</a></li>
+									<li><a href="#">Водосточная система</a></li>
+									<li><a href="#">Мелкие расходники</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">О компании</a></li>
+						<li class="menu__haschild">
+							<a href="#">Клиентам</a>
+							<ul>
+								<li><a href="#">Клиентам</a></li>
+								<li><a href="#">Клиентам</a></li>
+								<li><a href="#">Клиентам</a></li>
+								<li><a href="#">Клиентам</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Калькулятор</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="header__right">
+						<a href="mailto:yugprofil@mail.ru" class="link-simple hidden-mob">yugprofil@mail.ru</a>
+						<div class="header__buttons">
+							<div class="header-search">
+								<div class="header-search__form">
+									<form>
+										<input type="text" placeholder="Поиск" required="required">
+										<button class="btn-search"><img src="img/search.svg" alt="alt"></button>
+									</form>
+								</div>
+								<div class="open-search"><img src="img/search.svg" alt="alt"></div>
+							</div>
+							<a href="#modal-callback" class="btn-header fancybox">
+								<img src="img/tel.svg" alt="alt">
+							</a>
+							<a href="#" class="btn-header btn-header_basket">
+								<img src="img/cart.svg" alt="alt">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu">
+					<li class="menu__catalog">
+						<a href="#">Каталог продукции</a>
+						<div class="menu__dropdown">
+							<ul>
+								<li><a href="#">Трубы профильные</a></li>
+								<li><a href="#">Профнастил</a></li>
+								<li><a href="#">Сэндвич-панели</a></li>
+								<li><a href="#">Профили для ГКЛ</a></li>
+								<li><a href="#">Штакетники</a></li>
+								<li><a href="#">Профили для армирования окон</a></li>
+								<li><a href="#">Водосточная система</a></li>
+								<li><a href="#">Мелкие расходники</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li class="menu__haschild">
+						<a href="#">Клиентам</a>
+						<ul>
+							<li><a href="#">Клиентам</a></li>
+							<li><a href="#">Клиентам</a></li>
+							<li><a href="#">Клиентам</a></li>
+							<li><a href="#">Клиентам</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Калькулятор</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="location-main">
+					<div class="location-main__value">Ростов-на-Дону</div>
+					<div class="location-drodown">
+						<ul>
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Санкт Петербург</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Новороссийск</a></li>
+							<li><a href="#">Ставрополь</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Симферополь</a></li>
+							<li><a href="#">Мелитополь</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__contacts">
+					<a href="mailto:yugprofil@mail.ru" class="link-simple">yugprofil@mail.ru</a>
+					<a href="#modal-callback" class="btn-main fancybox"><img src="img/phone.svg" alt="alt">Обратный звонок</a>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="page-article">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Новости</a></li>
+					<li>Выбираем правильную металлобазу</li>
+				</ul>
+				<h1>Выбираем правильную металлобазу</h1>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="article-content">
+							<div class="top-article">
+								<img src="img/article1.jpg" alt="alt">
+								<ul class="nav-article">
+									<li><a href="#article-1">Правильная база</a></li>
+									<li><a href="#article-2">О сортаменте</a></li>
+									<li><a href="#article-3">На что обратить внимание при выборе металлобазы?</a></li>
+								</ul>
+							</div>
+							<h2 id="article-1">Правильная база</h2>
+							<p>Металл – материал, широко распространённый в промышленности и в строительном сегменте рынка. Это большая группа товаров, включающая огромный сортамент металлопродукции разных наименований. Приобрести некоторые позиции можно в обычных строительных супермаркетах или на рынке, но самый большой выбор, лояльные расценки предлагают металлобазы, которых немалое количество в каждом регионе. Большинство таких предприятий реализуют качественный металлопрокат, прошедший соответствующую сертификацию.</p>
+							<p>Но на рынке можно встретить недобросовестных продавцов, где номенклатура товара представлена от кустарных производителей. Нужно понимать: как выбрать металлобазу с подтвержденным качеством металлопроката. Придётся провести мониторинг сегмента рынка металлопроката или изучить основные критерии выбора компании, имеющей своё собственное производство.</p>
+							<p>Специализированная база продажи металла – компания, которая кроме реализации проката, оказывает услуги по обработке, резке, сварке и т. д. По сути – это поставщик и одновременно производитель товара, имеющий большие складские площади, реализующий товар по дилерским расценкам.</p>
+							<h2 id="article-2">О сортаменте</h2>
+							<img src="img/article2.jpg" class="img-right" alt="alt">
+							<span>На складах металлобазы хранится широкий перечень металлопродукции: от металлических заготовок до сложного оборудования:</span>
+							<ul>
+								<li>цветного проката </li>
+								<li>сталь черная и нержавеющих марок;</li>
+								<li>чугунных сплавов;</li>
+								<li>редкоземельной группы;</li>
+								<li>полимеров, композитов, реактивов;</li>
+								<li>благородные металлы для производства технических изделий;</li>
+								<li>трубопроводной арматуры и труб;</li>
+								<li>металлических листов, полос;</li>
+								<li>гранул, металлических порошков;</li>
+								<li>проволоки, чушек, канатов и сетки;</li>
+							</ul>
+							<div class="info-about">
+								<div class="info-about__logo">
+									<img src="img/logo.svg" alt="alt">
+								</div>
+								<div class="info-about__title">ведущий производитель металлопроката <br>в юфо</div>
+							</div>
+							<h2 id="article-3">На что обратить внимание при выборе металлобазы?</h2>
+							<p>Главный критерий при подборе надёжного продавца – опыт на металлургическом сегменте рынка. Добросовестные металлобазы задерживаются на плаву надолго, можно изучить информацию: кто из представленных предприятий лидирует по продажам в регионе.</p>
+							<p>Важно изучить раздел «О компании» на официальном сайте. Узнать, какие у компании есть сертификаты. Посмотреть отзывы на сторонних ресурсах. Отзывы реальных покупателей помогут составить объективную картину. Компания должна представлять подробные консультации по подбору. По требованию клиента менеджер должен показать образцы металлопродукции на складах и предоставить необходимые документы.</p>
+							<p>Надёжную металлобазу среди конкурентов выделяют очевидные вещи:</p>
+							<ul>
+								<li>широкий сортамент в каталоге, доступная для изучения информация;</li>
+								<li>адекватные расценки;</li>
+								<li>доставка в пределах населённого пункта, в отдаленные регионы страны;</li>
+								<li>услуги по обработке, резке металлопроката;</li>
+								<li>реализация сортамента любого проката оптом и в единичных экземплярах. </li>
+							</ul>
+							<p>Производит и поставляет универсальный общестроительный прокат и редкие позиции под заказ. На рынке фирма успешно функционирует более 10 лет, за которые открылось 66 филиалов в странах СНГ. Возможен наличный расчет экспедитору при получении товара и безналичный перевод. У компании свой автопарк, поэтому мы быстро доставим заказ на объект даже в отдаленный регион. Возможен самовывоз.</p>
+						</div>
+						<div class="row row_page">
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<div class="item-catalog__slider">
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">Кровельный профнастил</a>
+										<p>Универсальный профнастил с повышенной прочностью</p>
+										<div class="item-catalog__bottom">
+											<div class="price-main">от 700 ₽</div>
+											<a href="#" class="btn-main btn-main_border">Добавить <img src="img/cart.svg" alt="alt"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<div class="item-catalog__slider">
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">Кровельный профнастил</a>
+										<p>Универсальный профнастил с повышенной прочностью</p>
+										<div class="item-catalog__bottom">
+											<div class="price-main">от 700 ₽</div>
+											<a href="#" class="btn-main btn-main_border">Добавить <img src="img/cart.svg" alt="alt"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<div class="item-catalog__slider">
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+										<div>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog1.png" alt="alt">
+											</a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">Кровельный профнастил</a>
+										<p>Универсальный профнастил с повышенной прочностью</p>
+										<div class="item-catalog__bottom">
+											<div class="price-main">от 700 ₽</div>
+											<a href="#" class="btn-main btn-main_border">Добавить <img src="img/cart.svg" alt="alt"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row row_main">
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-news">
+									<span class="item-news__top">
+										<span class="item-news__image">
+											<img src="img/news3.jpg" alt="alt">
+										</span>
+										<span class="item-news__info">
+											<span class="item-news__category">новость</span>
+											<span class="item-news__title">выбираем правильную металлобазу</span>
+										</span>
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">18 марта 2025</span>
+										<span class="item-news__text">Металл – материал, широко распространённый в промышленности ...</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-news">
+									<span class="item-news__top">
+										<span class="item-news__image">
+											<img src="img/news1.jpg" alt="alt">
+										</span>
+										<span class="item-news__info">
+											<span class="item-news__category">новость</span>
+											<span class="item-news__title">Двутавровые балки</span>
+											<span class="item-news__descr">Разновидность проката с Н-образным сечением</span>
+										</span>
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">18 марта 2025</span>
+										<span class="item-news__text">Двутавровые балки: виды, особенности и сферы применения в строительстве ...</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-news">
+									<span class="item-news__top">
+										<span class="item-news__image">
+											<img src="img/news2.jpg" alt="alt">
+										</span>
+										<span class="item-news__info">
+											<span class="item-news__category">новость</span>
+											<span class="item-news__title">как получить искусственный металл?</span>
+										</span>
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">18 марта 2025</span>
+										<span class="item-news__text">Искусственные металлы — материалы, обладающие прочностью, химически ...</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-news">
+									<span class="item-news__top">
+										<span class="item-news__image">
+											<img src="img/news3.jpg" alt="alt">
+										</span>
+										<span class="item-news__info">
+											<span class="item-news__category">новость</span>
+											<span class="item-news__title">выбираем правильную металлобазу</span>
+										</span>
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">18 марта 2025</span>
+										<span class="item-news__text">Металл – материал, широко распространённый в промышленности ...</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-news">
+									<span class="item-news__top">
+										<span class="item-news__image">
+											<img src="img/news1.jpg" alt="alt">
+										</span>
+										<span class="item-news__info">
+											<span class="item-news__category">новость</span>
+											<span class="item-news__title">Двутавровые балки</span>
+											<span class="item-news__descr">Разновидность проката с Н-образным сечением</span>
+										</span>
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">18 марта 2025</span>
+										<span class="item-news__text">Двутавровые балки: виды, особенности и сферы применения в строительстве ...</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation__main">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="consultation__content">
+								<h2 class="consultation__title">если у вас остались вопросы</h2>
+								<div class="consultation__descr">оставьте свои контактные данные <br>и мы свяжемся с Вами </div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="form-page">
+								<div class="title-form">Заполните форму</div>
+								<form>
+									<div class="item-form">
+										<input type="text" placeholder="Ваше имя" required>
+									</div>
+									<div class="item-form">
+										<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+									</div>
+									<div class="item-form">
+										<textarea placeholder="Ваш вопрос" required></textarea>
+									</div>
+									<input type="submit" value="Отправить" class="btn-main">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" required="required" checked="checked" />
+											<span>Согласие на обработку персональных данных</span>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="footer__logo">
+							<a href="#" class="logo">
+								<img src="img/logo.svg" alt="alt">
+							</a>
+							<div class="logo-descr">Производим и продаем металлопрокат в ЮФО</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-6">
+						<div class="footer__title">Главное</div>
+						<ul class="footer__nav">
+							<li><a href="#">Оптовым покупателям</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<a href="#" class="btn-main btn-main_footer">Калькулятор расчета <br>стоимости онлайн</a>
+					</div>
+					<div class="col-lg-2 col-6">
+						<div class="footer__title">Каталог продукции</div>
+						<ul class="footer__nav">
+							<li><a href="#">Трубы профильные</a></li>
+							<li><a href="#">Профнастил</a></li>
+							<li><a href="#">Сэндвич-панели</a></li>
+							<li><a href="#">Профили для ГКЛ</a></li>
+							<li><a href="#">Штакетники</a></li>
+							<li><a href="#">Профили для армирования окон</a></li>
+							<li><a href="#">Водосточная система</a></li>
+							<li><a href="#">Мелкие расходники</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="footer__column">
+							<div class="footer__title">Наши заводы</div>
+							<p>Батайск, ул. Комарова, 204А</p>
+							<p><a href="tel:+79885494206" class="phone-main">+7 (988) 549 42 06</a> менеджер Дмитрий</p>
+							<p><a href="tel:+79281191026" class="phone-main">+7 (928) 119 10 26 </a>менеджер Светлана</p>
+							<br>
+							<p>Мокрый Батай, ул Зеленая 1А</p>
+							<br>
+							<p>Ростов-на-Дону, пр. Буденновский, 101Б</p>
+							<p><a href="tel:+79198716560" class="phone-main">+7 (919) 871 65 60</a> менеджер Андрей</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="footer__column">
+							<div class="footer__title">Наш офис</div>
+							<p>Ростов-на-Дону, пр. Буденновский, 101Б</p>
+							<p><a href="tel:+78632326326" class="phone-main">+7 (863) 232 63 26</a> Главный офис</p>
+							<ul class="list-socials">
+								<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+							</ul>
+							<div class="footer__title">Режим работы</div>
+							<p>Пн-Пт с 08:00 до 18:00.</p>
+							<p>Сб с 09:00 до 17:00.</p>
+							<p>Вс - выходной.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-2">
+							<a href="#">Политика конфиденциальности </a>
+						</div>
+						<div class="col-lg-2">
+							<div class="copyright">© Copyright  2025 г.</div>
+						</div>
+						<div class="col-lg">
+							<div class="create">Сделано в <a href="#"><img src="img/copy.svg" alt="alt"></a></div>
+						</div>
+						<div class="col-lg-5">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<div id="modal-callback" class="modal-block">
+		<div class="form-page">
+			<div class="title-form">Обратный звонок</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="item-form">
+					<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+				</div>
+				<div class="file-upload">
+					<label><input type="file" name="file"> Прикрепить документ <i class="fal fa-paperclip"></i></label>
+					<div class="name-upload"></div>
+				</div>
+				<input type="submit" value="Отправить" class="btn-main">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-dealer" class="modal-block">
+		<div class="form-page">
+			<div class="title-form">Оставить заявку <br>на дилерство</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Название компании или ИП" required>
+				</div>
+				<div class="item-form">
+					<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+				</div>
+				<div class="file-upload">
+					<label><input type="file" name="file"> Возможность прикрепить файл <br>с реквизитами компании <i class="fal fa-paperclip"></i></label>
+					<div class="name-upload"></div>
+				</div>
+				<input type="submit" value="Отправить" class="btn-main">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.13"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
